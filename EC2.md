@@ -29,7 +29,7 @@
 - Solo se paga por hora (o en algunas instancias por segundo, con un mínimo de 60 segundos)
 - Uso parcial de una hora se redondea hacia arriba
 - Transferencia de datos entre regiones se cobra como Internet Data Transfer en ambos lados de la transferencia
-- El cobro comienza con la secuencia de booteo de la AMI, y termina cuando la instancia se termina
+- El ciclo de cobro comienza con la secuencia de booteo de la AMI, y termina cuando la instancia se termina
 - Instancias detenidas no incurren costo de uso o transferencia de datos, pero si de almacenamiento de volúmenes EBS
 - Instancias en distintas AZ tienen costo de transferencia entre regiones
 - Instancias en distintas regiones tienen costo de Internet Data Transfer
