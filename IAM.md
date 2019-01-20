@@ -1,0 +1,23 @@
+# IAM
+
+- Permite administrar usuarios y su nivel de acceso a la Management Console
+- Control centralizado de la cuenta AWS
+- Tiene permisos granulares
+- Identity Federation (permite hacer login con Active Directory, Facebook, LinkedIn, etc)
+- Permite activar Multifactor Authentication
+- Es un servicio global, cualquier cambio es aplicado a todas las regiones
+- Enlace para hacer login es personalizable (global namespace, debe ser único)
+- Permite dar acceso temporal a usuarios/dispositivos a servicios específicos
+- Permite establecer una política de rotación de passwords propia
+- Integrado con varios servicios de AWS
+- PCI-DSS compliant
+- Terminología:
+	- Users: personas, empleados de la organización, etc
+	- Groups: colección de usuarios, cada usuario hereda los permisos del grupo
+	- Policies: documentos en formato JSON que dictan qué permisos tiene un usuario/grupo/rol
+	- Roles: se asignan a recursos de AWS para dar acceso a otros recursos de AWS
+- Acceso a usuarios puede ser programatico para la API, CLI o SDK (entrega Access Key ID y Secret Access Key) y/o a la Management Console
+- Las credenciales entregadas al momento de creación solo se muestran una vez
+- Usuarios nuevos no tienen ningún permiso
+- La cuenta `root` es la cuemta creada al crear la cuenta AWS y tiene acceso ilimitado
+- Al crear grupos, AWS tiene Policies ya creadas de variados tipos y casos de uso
