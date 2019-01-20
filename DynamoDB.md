@@ -18,6 +18,7 @@
 	- Strong Consistent Read: devuelve la data con todas las operaciones de escritura que fueron exitosas. Puede no estar disponible si hay problemas en la red. Para usarlo, se debe proveer el parámetro `ConsistentRead` al hacer una operación de lectura
 - Read Capacity Unit: representa una strongly consistent read por segundo, o dos eventually consistent read por segundo, para ítems de hasta 4 KB
 - Write Capacity Unit: representa una escritura por segundo para un ítem de hasta 1 KB. Escrituras transaccionales requieren 2 WCU
+- Si se excede la capacidad reservada, se obtendrá una respuesta `400 Bad Request) vía HTTP o `ProvisionedThrougputExceededException` vía SDK
 - Para un documento, el tamaño combinado de key/value no puede superar los 400 KB
 - Puede ser bastante caro para aplicaciones con fuertes requerimientos de escritura, pero muy barato para requerimientos de lectura
 
