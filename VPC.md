@@ -54,7 +54,8 @@
 - Cuando se asocia un NACL a una subnet, la asociación anterior de la subnet es eliminada
 - Solo se pueden asociar a un VPC
 - En el VPC creado por AWS, el NACL permite todo el tráfico de entrada y salida
-- En un VPC nuevo, el NACL por defecto rechaza todo el tráfico de entrada y salida
+- En un VPC nuevo, el NACL por defecto permite todo el tráfico de entrada y salida
+- Un NACL nuevo por defecto rechaza todo el tráfico de entrada y salida
 - Para permitir conexión con clientes a través de internet, se debe poner una regla de salida para los [puertos efímeros](https://en.wikipedia.org/wiki/Ephemeral_port)
 
 ## Route Tables
